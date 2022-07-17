@@ -1,5 +1,5 @@
 body {
-	background-color: lightgray;
+	background-color: #E4E6F0;
 }
 
 * {
@@ -16,14 +16,7 @@ body {
 
 /* Links */
 
-a, a:link, a:visited  {
-    /* color: inherit; */
-    text-decoration: none;
-    /* display: inline-block; */
-}
-
-a:hover  {
-    /* color: inherit; */
+a, a:link, a:visited, a:hover {
     text-decoration: none;
 }
 
@@ -90,6 +83,8 @@ legend {
 	display: block;
 }
 
+/* header */
+
 .header {
 	display: flex;
 	align-items: center;
@@ -97,50 +92,57 @@ legend {
 	margin: auto 117px;
 }
 
-.logo {
+.header__logo {
 	width: 26px;
 	height: 26px;
 	border-radius: 50%;
-	background-color: blue;
+	background-color: #5E81FE;
 }
 
-.menu {
+.header__menu {
 	display: flex;
 	align-items: center;
 	margin-left: 73px;
 }
 
-.menu p {
+.header__menu p {
 	margin-right: 42px;
     cursor: pointer;
     user-select: none;
     transition: .2s ease-in-out;
 }
 
-.menu p:hover {
+.header__menu p:hover {
     color: lightblue;
     font-size: 18px;
     
 }
 
-.menu:last-child {
+.header__menu:last-child {
 	margin-right: 0;
 }
 
-.reg-sm {
+.header__contacts {
 	display: flex;
+	align-items: center;
 	margin-left: auto;
 }
 
-.reg-sm a {
+.header__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 20px;
 	height: 20px;
-	margin: auto;
-	background-color: red;
-	margin-right: 35px;
+	margin-right: 20px;
+	cursor: pointer;
 }
 
-.reg-sm button {
+.header__icon:hover path {
+	fill: #6188FF;
+}
+
+.header__btn {
 	width: 113px;
 	height: 43px;
 	margin-left: 25px;
@@ -148,6 +150,8 @@ legend {
 	background-color: #D2E1FF;
 	color: #3A79FF;
 }
+
+/* main-slider */
 
 .main-slider {
 	display: flex;
@@ -214,26 +218,27 @@ legend {
 	background-color: blue;
 }
 
-.comps {
+/* partners */
+
+.partners {
+	width: 100vw;
     height: 145px;
     display: flex;
     justify-content: center;
     align-items: center;
+	background-color: white;
 }
 
-.comps__el {
+.partners__item {
     width: 120px;
-    height: 25px;
-    margin-right: 76px;
-    background-color: red;
-    transition: .2s ease-in-out;
+    height: 30px;
+    margin-right: 70px;
     cursor: pointer;
-    user-select: none;
 }
 
-.comps__el:hover {
-    background-color: blue;
-    
+.partners__item:hover path {
+	fill:#5982E7;
+
 }
 
 .plan {
